@@ -11,7 +11,7 @@ def get_symbols(symbol):
     #
     if len(number) != 16:
         if symbol not in list_arithmetics_operations:
-            if symbol != "=":
+            if symbol != "=" and symbol != ",":
                 number += str(symbol) #
                 label.setText(number) #
     if symbol in list_arithmetics_operations and number != '' and symbol != "+/-":
@@ -37,7 +37,27 @@ def get_symbols(symbol):
         number *= -1
         number = str(number)
         label.setText(number)
-
+    if symbol == ",":
+        number_for_comma = number
+        number += str(symbol) 
+        label.setText(number)
+        number = number_for_comma
+        if symbol not in list_arithmetics_operations and symbol != "=":
+            number_for_comma_int = int(number)
+            number.split()
+            a = 10
+            for i in number:
+                if i == number[0]:
+                    pass
+                else:
+                    number_for_comma_int += int(i) / a
+                    print(number_for_comma_int)
+                    a *= 10
+            number = str(number_for_comma_int)
+            print(number)
+            list_input.clear
+            list_input.append(number)
+            print(list_input)
 def add_zero():
     get_symbols(0)
 def add_one():
@@ -74,6 +94,8 @@ def add_plus_minus():
     get_symbols("+/-")
 def add_percent():
     get_symbols( "%")
+def add_comma():
+    get_symbols( ",")
 #   
 list_sym_functions.append(add_division)
 list_sym_functions.append(add_multiply)
@@ -83,6 +105,7 @@ list_sym_functions.append(add_equals)
 list_sym_functions.append(add_AC)
 list_sym_functions.append(add_plus_minus)
 list_sym_functions.append(add_percent)
+list_sym_functions.append(add_comma)
 #
 list_num_functions.append(add_zero)
 list_num_functions.append(add_one)

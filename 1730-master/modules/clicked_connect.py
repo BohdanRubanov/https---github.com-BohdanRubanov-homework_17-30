@@ -13,3 +13,5 @@ list_Symbols_Button[0].clicked.connect(list_sym_functions[5])
 list_Symbols_Button[1].clicked.connect(list_sym_functions[6])
 
 list_Symbols_Button[2].clicked.connect(list_sym_functions[7])
+
+list_Symbols_Button[8].clicked.connect(list_sym_functions[8])

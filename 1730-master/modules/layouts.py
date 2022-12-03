@@ -25,7 +25,7 @@ def addToLayout():
             #
             list_HLayouts[index].addWidget(button1)
     #
-    list_numButtons[0].setContentsMargins(4, 0, 0 ,0)
+    # list_numButtons[0].setContentsMargins(4, 0, 0 ,0)
     #
     list_HLayouts[-1].addWidget(list_numButtons[0])
     list_HLayouts[-1].addWidget(list_Symbols_Button[-1])

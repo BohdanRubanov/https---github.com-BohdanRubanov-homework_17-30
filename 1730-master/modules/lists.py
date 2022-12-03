@@ -16,17 +16,5 @@ list_arithmetics_operations = ["/", "*", "-", "+", "+/-", "%"]
 list_input = []
 
 list_num_functions = []
-# list_num_functions = [  
-    # add_zero, 
-    # add_one,
-    # add_two,
-    # add_three,
-    # add_four,
-    # add_five,
-    # add_six,
-    # add_seven,
-    # add_eight,
-    # add_nine  
-# ]
 
 list_sym_functions = []

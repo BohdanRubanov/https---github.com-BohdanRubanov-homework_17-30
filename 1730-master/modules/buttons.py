@@ -43,10 +43,11 @@ def add_buttons():
         index -= 6
 #
 # 
-for el in range(1,10):
-    resize_buttons(list_numButtons[el], win_width//4, win_width//4)
-
-for el in list_Symbols_Button:
-    resize_buttons(el, win_width//4, win_width//4)
-
-resize_buttons(list_numButtons[0], win_width // 2, win_width//4)
+# for el in range(1,10):
+    # resize_buttons(list_numButtons[el], win_width//4, win_width//4)
+# 
+# for el in list_Symbols_Button:
+    # resize_buttons(el, win_width//4, win_width//4)
+# 
+# resize_buttons(list_numButtons[0], win_width // 2, win_width//4)
+# 

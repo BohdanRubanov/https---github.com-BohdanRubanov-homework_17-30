@@ -14,6 +14,11 @@ win = QWidget()
 #
 # win.resize(300, 400)
 
+win.setStyleSheet(
+    '''background-color: rgb(80,80,80);
+    '''
+)
+
 win.setFixedSize(win_width, win_height)
 #
 win.setWindowTitle("Calculator")

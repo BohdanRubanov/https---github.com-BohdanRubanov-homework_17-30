@@ -8,7 +8,6 @@ number = ""
 flag_percent = False
 def get_symbols(symbol):
     global flag_percent
-    print(list_input)
     global number
     #
     if len(number) != 16:
@@ -25,7 +24,6 @@ def get_symbols(symbol):
         flag_percent = True
     if flag_percent == True:
         if symbol == "=":
-           print(list_input)
            list_input.append(number)
            if list_input[2] == "":
                 number = str(percent_operation())
@@ -53,6 +51,15 @@ def get_symbols(symbol):
         number *= -1
         number = str(number)
         label.setText(number)
+    if symbol == ".":
+        if len(number) > 0:
+            if not "." in number:
+                number += "."
+                label.setText(number)
+        elif number == "":
+            number += "0"
+            number += "."
+            label.setText(number)
 
 def add_zero():
     get_symbols(0)
@@ -90,6 +97,8 @@ def add_plus_minus():
     get_symbols("+/-")
 def add_percent():
     get_symbols( "%")
+def add_dot():
+    get_symbols( ".")
 #   
 list_sym_functions.append(add_division)
 list_sym_functions.append(add_multiply)
@@ -99,6 +108,7 @@ list_sym_functions.append(add_equals)
 list_sym_functions.append(add_AC)
 list_sym_functions.append(add_plus_minus)
 list_sym_functions.append(add_percent)
+list_sym_functions.append(add_dot)
 #
 list_num_functions.append(add_zero)
 list_num_functions.append(add_one)
@@ -110,5 +120,4 @@ list_num_functions.append(add_six)
 list_num_functions.append(add_seven)
 list_num_functions.append(add_eight)
 list_num_functions.append(add_nine)
-
 

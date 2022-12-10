@@ -9,7 +9,7 @@ list_Symbols_Button = list()
 #
 list_all_button = list()
 #
-list_symbols = ["AC", "+/-", "%", "÷", "x", "-", "+", "=", ","]
+list_symbols = ["AC", "+/-", "%", "÷", "x", "-", "+", "=", "."]
 #
 list_arithmetics_operations = ["/", "*", "-", "+", "+/-", "%"]
 # 

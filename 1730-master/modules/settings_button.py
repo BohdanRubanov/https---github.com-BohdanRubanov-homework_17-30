@@ -48,6 +48,6 @@ def customize_buttons():
         background-color: darkgrey;
         font-size: 28px;
         color: rgb(225,225,225);
-        max-width: 115px;
+        max-width: 120px;
         max-height: 56px;
     ''') 
